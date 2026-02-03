@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #eaf4ff, #ffffff);
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* Viewer Layout */
+#divViewer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Arrows */
+#leftArrow, #rightArrow{
+    width: 55px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#leftArrow:hover, #rightArrow:hover{
+    transform: scale(1.15);
+    opacity: 0.75;
+}
+
+/* Viewer Box */
+#viewer{
+    position: relative;
+    max-width: 1000px;
+    width: 90%;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Image */
+#photo{
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+#viewer:hover #photo{
+    transform: scale(1.04);
+}
+
+/* Caption */
+#text{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Circles */
+#divCircle{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+#divCircle img{
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#divCircle img:hover{
+    transform: scale(1.4);
+    opacity: 0.7;
+}
+
